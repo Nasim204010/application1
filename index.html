@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق حماية المستهلك</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تطبيق حماية المستهلك</h1>
+        <p>يرجى تعبئة البيانات التالية لتقديم شكوى عن منتج أو خدمة.</p>
+        <form id="complaintForm">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" placeholder="أدخل اسمك" required>
+
+            <label for="product">المنتج/الخدمة:</label>
+            <input type="text" id="product" placeholder="اسم المنتج أو الخدمة" required>
+
+            <label for="complaint">الشكوى:</label>
+            <textarea id="complaint" rows="4" placeholder="أدخل شكواك" required></textarea>
+
+            <button type="submit">إرسال الشكوى</button>
+        </form>
+
+        <h2>الشكاوى المضافة</h2>
+        <div id="complaintsGrid" class="complaints-grid">
+            <!-- سيتم إضافة بطاقات الشكاوى هنا -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
